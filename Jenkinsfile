@@ -9,8 +9,8 @@ pipeline {
     stage('Initialize') {
       agent {
         docker {
-          image 'Maven:3.3.9-jdk-8'
           args '-v/Users/bitwiseman/.m2:/root/.m2'
+          image 'maven:3.3.9-jdk-8'
         }
 
       }
